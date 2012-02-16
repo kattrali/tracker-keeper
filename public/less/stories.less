@@ -33,6 +33,32 @@ body {
   }
 }
 
+.actions {
+  margin-top: -5px;
+  float: right;
+  .action {
+    width: 46px;
+    font-weight:bold;
+    color:white;
+  }
+  .btn-deliver {
+    background-color: hsl(54, 100%, 46%);
+    background-image: -moz-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
+    background-image: -ms-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(54, 100%, 46%)), to(hsl(34, 100%, 46%)));
+    background-image: -webkit-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
+    background-image: -o-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
+    background-image: linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#EBD300', endColorstr='#EB8500', GradientType=0);
+    border-color: hsl(44, 100%, 46%) hsl(34, 100%, 46%) hsl(34, 100%, 37%) hsl(34, 100%, 46%);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  }
+  .btn-start {
+    color: #383838;
+  }
+}
+
 .main {
   padding: 60px 0;
   height: 100%;
@@ -41,6 +67,12 @@ body {
   margin: auto;
   .title {
     margin: 5px;
+    h1 {
+      display:inline-block;
+    }
+    .actions {
+      margin:5px;
+    }
   }
   .stories {
     margin-top: 12px;
@@ -74,31 +106,6 @@ body {
         &.feature { background: url(/img/feature.png) no-repeat}
         &.chore { background: url(/img/chore.png) no-repeat}
         &.release { background: url(/img/release.png) no-repeat}
-      }
-      .actions {
-        margin-top: -5px;
-        float: right;
-        .action {
-          width: 41px;
-          font-weight:bold;
-          color:white;
-        }
-        .btn-deliver {
-          background-color: hsl(54, 100%, 46%);
-          background-image: -moz-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
-          background-image: -ms-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
-          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(54, 100%, 46%)), to(hsl(34, 100%, 46%)));
-          background-image: -webkit-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
-          background-image: -o-linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
-          background-image: linear-gradient(top, hsl(54, 100%, 46%), hsl(34, 100%, 46%));
-          background-repeat: repeat-x;
-          filter: progid:dximagetransform.microsoft.gradient(startColorstr='#EBD300', endColorstr='#EB8500', GradientType=0);
-          border-color: hsl(44, 100%, 46%) hsl(34, 100%, 46%) hsl(34, 100%, 37%) hsl(34, 100%, 46%);
-          filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-        }
-        .btn-start {
-          color: #383838;
-        }
       }
       .description {
         margin-top:4px;

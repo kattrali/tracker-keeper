@@ -1,8 +1,8 @@
 .title
   %h1 #{@title}
   - if @title == MY_STORIES
-    %a.btn#refresh Refresh
-    (last refreshed at #{Time.at(@age.to_f).strftime("%l:%M %P")})
+    %span.actions
+      %a.action.btn.btn-info#refresh Refresh
 .stories
   - @stories.each do |story|
     .story{:class => "#{story[:state]}",:"data-story-id" => "#{story[:id]}", :"data-project-id" => "#{story[:project]}"}
